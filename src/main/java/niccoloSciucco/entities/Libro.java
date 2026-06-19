@@ -5,6 +5,7 @@ import niccoloSciucco.enums.Genere;
 
 @Entity
 @Table(name = "libri")
+@DiscriminatorValue("Libro")
 public class Libro extends Catalogo {
     @Column(nullable = false)
     private String autore;

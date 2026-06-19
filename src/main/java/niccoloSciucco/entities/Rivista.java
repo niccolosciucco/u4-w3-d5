@@ -5,6 +5,7 @@ import niccoloSciucco.enums.Periodicita;
 
 @Entity
 @Table(name = "riviste")
+@DiscriminatorValue("Rivista")
 public class Rivista extends Catalogo {
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)

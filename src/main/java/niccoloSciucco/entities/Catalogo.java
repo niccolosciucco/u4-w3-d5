@@ -7,6 +7,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "catalogo")
 @Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(name = "tipo")
 public abstract class Catalogo {
     @Id
     @GeneratedValue
@@ -28,5 +29,9 @@ public abstract class Catalogo {
         this.titolo = titolo;
         this.annoDiPubblicazione = annoDiPubblicazione;
         this.numeroPagine = numeroPagine;
+    }
+
+    public String getTitolo() {
+        return titolo;
     }
 }

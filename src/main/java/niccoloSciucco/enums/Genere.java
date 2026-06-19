@@ -3,6 +3,7 @@ package niccoloSciucco.enums;
 public enum Genere {
     NARRATIVA,
     GIALLO,
+    ROMANZO,
     FANTASCIENZA,
     FANTASY,
     ROMANTICO,
@@ -12,5 +13,6 @@ public enum Genere {
     SAGGISTICA,
     POESIA,
     AVVENTURA,
-    FUMETTO
+    FUMETTO,
+    CLASSICO
 }
