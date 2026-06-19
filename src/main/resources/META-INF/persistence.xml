@@ -6,6 +6,8 @@
         <class>niccoloSciucco.entities.Catalogo</class>
         <class>niccoloSciucco.entities.Libro</class>
         <class>niccoloSciucco.entities.Rivista</class>
+        <class>niccoloSciucco.entities.Utente</class>
+        <class>niccoloSciucco.entities.Prestito</class>
         <properties>
             <property name="jakarta.persistence.jdbc.url"
                       value="jdbc:postgresql://localhost:5432/catalogo_bibliotecario"/>
