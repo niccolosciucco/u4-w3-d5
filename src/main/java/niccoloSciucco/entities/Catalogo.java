@@ -18,5 +18,15 @@ public abstract class Catalogo {
     @Column(name = "anno_di_pubblicazione", nullable = false)
     private int annoDiPubblicazione;
     @Column(name = "numero_pagine")
-    private int numero_pagine;
+    private int numeroPagine;
+
+    protected Catalogo() {
+    }
+
+    public Catalogo(String codiceISBN, String titolo, int annoDiPubblicazione, int numeroPagine) {
+        this.codiceISBN = codiceISBN;
+        this.titolo = titolo;
+        this.annoDiPubblicazione = annoDiPubblicazione;
+        this.numeroPagine = numeroPagine;
+    }
 }
